@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <!----------- buttons, search, container ------>
+    
+    <div class="buttons">
+      <input value="All Countries" type="button" class="mygtukasAll" />
+      <input value="Europe" type="button" class="mygtukasEu" />
+      <input value="Asia" type="button" class="mygtukasAsia" />
+      <input value="Oceania" type="button" class="mygtukasOce" />
+      <input value="Africa" type="button" class="mygtukasAfrica" />
+      <input value="Americas" type="button" class="mygtukasAme" />
+    </div>
+    <div class="searchbox">
+      <input id="search" type="text" placeholder="Search selected region(s)" />
+      <div class="cleardiv"><input id="searchclear" type="button" value="x"></div>
+    </div>
+    <div class="container"></div>
+    
+     <!---------- modal ------------------>
+    
+    <div class="wrapper">
+      <div class="popup">
+        <div id="closediv"><input type="button" id="close" value="x"></div>
+        <div class="imgalign">
+          <div class="imgalign2"><img class="popflag" /></div>
+            <p class="popname"></p>
+            </div>
+            <p>Region: <span class="popregion"></span></p>
+            <p>Language: <span class="poplang"></span></p>
+            <p>Capital City: <span class="popcapital"></span></p>
+            <p>Currency: <span class="popcurrency1"></span> 
+              (<span class="popcurrency2"></span>
+              , <span class="popcurrency3"></span>)
+            </p>
+          
+    <!---------- weather ------------------>
+        
+        <div class="weatherdiv">
+          <br><p class="namecss">Weather in <span class="orascapital"></span></p>
+          <div class="orasheader">
+            <img class="weathericon">
+            <p>&nbsp;<span class="temperature"></span>&nbsp;°C</p>
+          </div>
+          <p class="orasstatus"></p>
+          <div class="infowrap">
+            <div class="infobox1">
+              <p>Wind:&nbsp;<span class="windspeed"></span> km/h <span class="winddir"></span></p>
+              <p>Wind Gusts: <span class="windgust"></span> km/h</p>
+            </div>
+            <div class="infobox2">
+              <p>Humidity: <span class="humidity"></span>%</p>
+              <p>Cloud Cover: <span class="clouds"></span>%</p>
+            </div>
+          </div>
+        </div>
+        
+    <!------------ Forecast -------------->
+        
+        <div class="moreweather">
+          <input type="button" class="forecast" value="3 day forecast">
+        </div>
+      </div>
+      <div class="forwrapper">
+      <div class="forbuttons">
+        <input type="button" class="button0">
+        <input type="button" class="button1">
+        <input type="button" class="button2">
+      </div>
+      <div class="forcont">
+        <div>
+          <span>00:00</span><img class="ximg0"><span class="xstatus0"></span><span class="xtemp0"></span>°C
+        </div>
+        <div>
+          <span>02:00</span><img class="ximg1"><span class="xstatus1"></span><span class="xtemp1"></span>°C
+        </div>
+        <div>
+          <span>04:00</span><img class="ximg2"><span class="xstatus2"></span><span class="xtemp2"></span>°C
+        </div>
+        <div>
+          <span>06:00</span><img class="ximg3"><span class="xstatus3"></span><span class="xtemp3"></span>°C
+        </div>
+        <div>
+          <span>08:00</span><img class="ximg4"><span class="xstatus4"></span><span class="xtemp4"></span>°C
+        </div>
+        <div>
+          <span>10:00</span><img class="ximg5"><span class="xstatus5"></span><span class="xtemp5"></span>°C
+        </div>
+        <div>
+          <span>12:00</span><img class="ximg6"><span class="xstatus6"></span><span class="xtemp6"></span>°C
+        </div>
+        <div>
+          <span>14:00</span><img class="ximg7"><span class="xstatus7"></span><span class="xtemp7"></span>°C
+        </div>
+        <div>
+          <span>16:00</span><img class="ximg8"><span class="xstatus8"></span><span class="xtemp8"></span>°C
+        </div>
+        <div>
+          <span>18:00</span><img class="ximg9"><span class="xstatus9"></span><span class="xtemp9"></span>°C
+        </div>
+        <div>
+          <span>20:00</span><img class="ximg10"><span class="xstatus10"></span><span class="xtemp10"></span>°C
+        </div>
+        <div>
+          <span>22:00</span><img class="ximg11"><span class="xstatus11"></span><span class="xtemp11"></span>°C
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
